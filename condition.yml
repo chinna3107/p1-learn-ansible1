@@ -6,12 +6,12 @@
     vegetable: false
 
   tasks:
-    - name: Print fruit name
+    - name: Print fruit Name
       ansible.builtin.debug:
         msg: Fruit Name - Apple
       when: fruit is true
 
-    - name: print Vegetable name
+    - name: print Vegetable Name
       ansible.builtin.debug:
           msg: Vegetable Name - Carrot
       when: vegetable is true
