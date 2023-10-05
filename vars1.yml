@@ -1,5 +1,5 @@
-- name: Variables
-  hosts: all
+- name: Variable Precedence
+  hosts: localhost
   connection: local
   vars:
     url: play.google.com
