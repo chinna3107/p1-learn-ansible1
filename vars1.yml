@@ -1,5 +1,5 @@
 - name: Variables
-  hosts: localhost
+  hosts: all
   connection: local
   vars:
     url: play.google.com
