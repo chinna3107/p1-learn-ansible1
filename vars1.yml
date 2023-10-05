@@ -1,0 +1,7 @@
+- name: Variables
+  hosts: localhost
+  connection: local
+  vars:
+    url: play.google.com
+    roles:
+      - sample
