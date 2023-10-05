@@ -3,13 +3,16 @@
   connection: local
   vars:
     url: play.google.com
-  tasks:
-    - name: Private variable
-      ansible.builtin.debug:
-        msg: URL = {{ url }}
+    roles:
+      - sample
+
+#  tasks:
+#    - name: Private variable
+#      ansible.builtin.debug:
+#        msg: URL = {{ url }}
  # Ansible access variable with two flower brackets
-    - name: Private task variable
-      ansible.builtin.debug:
-        msg: URL = {{ url }}
-      vars:
-        url: tasks.google.com
+#    - name: Private task variable
+#      ansible.builtin.debug:
+#        msg: URL = {{ url }}
+#      vars:
+#        url: tasks.google.com
