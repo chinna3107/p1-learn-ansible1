@@ -10,10 +10,10 @@
 
 - name: private variable
   ansible.builtin.debug:
-     msg: URL = {{ URL }}
+    msg: URL = {{ url }}
 
 - name: private variable - task variable defined
   ansible.builtin.debug:
-    msg: URL = {{ URL }}
+    msg: URL = {{ url }}
   vars:
-     URL: task.google.com
+     url: task.google.com
