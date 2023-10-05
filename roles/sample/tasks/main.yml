@@ -8,12 +8,12 @@
 #    state: started
 #    enabled: yes
 
-- name: private variable
+- name: Print variable
   ansible.builtin.debug:
-    msg: URL = {{ url }}
+    msg: URL = {{ URL }}
 
-- name: private variable - task variable defined
+- name: Print variable - task variable defined
   ansible.builtin.debug:
-    msg: URL = {{ url }}
+    msg: URL = {{ URL }}
   vars:
-     url: task.google.com
+    URL: tasks.google.com
